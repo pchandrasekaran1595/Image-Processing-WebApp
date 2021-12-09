@@ -1,0 +1,1 @@
+start /MAX cmd /c "title Collect Static && cls && python manage.py collectstatic && timeout /t 5 /nobreak"

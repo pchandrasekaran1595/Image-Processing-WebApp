@@ -1,0 +1,6 @@
+__pycache__
+.vscode
+staticfiles
+temp
+*.mp4
+*.sqlite3
