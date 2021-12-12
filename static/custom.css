@@ -3,3 +3,32 @@ body{
     background-position:left top;
     background-size: 100%;
 }
+
+table{
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+}
+
+.Inputs{
+    width: 250px;
+}
+
+.btn{
+    width: 25%;
+}
+
+#image_input{
+    background-color: lightgrey;
+}
+
+#preview_canvas{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+}

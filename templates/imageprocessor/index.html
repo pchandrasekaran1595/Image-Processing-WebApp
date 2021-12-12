@@ -13,6 +13,41 @@
 </head>
 {% csrf_token %}
 <body>
-    
+    <section hidden>
+        <canvas id="hidden_canvas"></canvas>
+    </section>
+    <div align="center">
+        <table>
+            <tr>
+                <td>
+                    <pre style="color: white;">
+Blur       : <input type="range" class="Inputs" name="blur" id="blur" min="3" max="99" step="2" value="3">
+
+Gamma      : <input type="range" class="Inputs" name="gamma" id="gamma" min="0" max="5" step="0.1" value="1">
+
+Hue        : <input type="range" class="Inputs" name="hue" id="hue" min="0" max="5" step="0.2" value="1">
+
+Saturation : <input type="range" class="Inputs" name="saturate" id="saturate" min="0" max="5" step="0.2" value="1">
+
+Vibrance   : <input type="range" class="Inputs" name="vibrance" id="vibrance" min="0" max="5" step="0.2" value="1">
+
+Sharpeness : <input type="range" class="Inputs" name="sharpen" id="sharpen" min="1" max="25" step="2" value="1">
+                    </pre>
+                </td>
+                <td>
+                    <input type="file" name="" id="image_input" accept="image/*">
+                    <br>
+                    <canvas width="640" height="360" id="preview_canvas"></canvas>
+                    <br>
+                    <button class="btn btn-primary" id="process">Process</button>
+                    <button class="btn btn-primary" id="reset">Reset</button>
+                    <section hidden=true id="link_section" style="margin-top: 25px;" >
+                        <a href="">Download Image</a>
+                    </section>
+                </td>
+            </tr>
+        </table>
+    </div> 
+    <script src="{% static 'process.js' %}"></script>
 </body>
 </html>
