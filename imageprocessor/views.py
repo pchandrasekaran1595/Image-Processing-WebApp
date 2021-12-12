@@ -18,8 +18,6 @@ def index(request):
         vibrance_val = float(json.loads(JSONData)["vibrance"])
         sharpen_val = int(json.loads(JSONData)["sharpen"])
 
-        print(gamma_val)
-
         header, image = image_codecs.decode_image(imageData)
 
         if blur_val != 0: image = image_processor.blur(image, blur_val)
