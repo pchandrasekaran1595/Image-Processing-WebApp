@@ -4,3 +4,4 @@ staticfiles
 temp
 *.mp4
 *.sqlite3
+venv
