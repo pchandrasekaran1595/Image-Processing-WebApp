@@ -1,1 +1,1 @@
-start /MAX cmd /c "title Collect Static && cls && python manage.py collectstatic && timeout /t 5 /nobreak"
+start /MAX cmd /c "title Collect Static && cls && cd venv/Scripts && activate && cd .. && cd .. && python manage.py collectstatic && deactivate && timeout /t 5 /nobreak"
