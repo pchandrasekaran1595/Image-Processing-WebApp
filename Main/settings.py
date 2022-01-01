@@ -6,7 +6,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if DEBUG:
@@ -17,6 +17,7 @@ else:
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost'
+    'pcs-impro-app.herokuapp.com'
 ]
 
 
