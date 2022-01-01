@@ -63,7 +63,7 @@ class ImageProcessor(object):
         image[:, :, 2] = feature
         return cv2.cvtColor(src=image, code=cv2.COLOR_HSV2BGR)
     
-    def sharpen(self, image:np.ndarray, ksize: int):
+    def sharpen(self, image:np.ndarray, ksize: int) -> np.ndarray:
         kernel = cv2.getStructuringElement(shape=cv2.MORPH_CROSS, ksize=(ksize, ksize)) * -1
         kernel[int(ksize / 2), int(ksize / 2)] = ((ksize - 1) * 2) + 1
 
