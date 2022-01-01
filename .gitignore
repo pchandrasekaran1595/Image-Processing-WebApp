@@ -2,6 +2,7 @@ __pycache__
 .vscode
 staticfiles
 temp
+t*.bat
 *.mp4
 *.sqlite3
 venv
