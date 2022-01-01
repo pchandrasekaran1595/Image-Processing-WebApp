@@ -1,3 +1,1 @@
-## Image Processing Web Application
-
-Blur, Sharpen, ...
+## Image Processing Web Application using Django
